@@ -20,7 +20,7 @@ public class ControllerAlgorytmy {
 
     @RequestMapping("/")
     public ModelAndView index() {
-        if (!sortedPeople.isEmpty()) sortedPeople = null;
+        if (sortedPeople != null && !sortedPeople.isEmpty()) sortedPeople = null;
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("home");
         return modelAndView;
