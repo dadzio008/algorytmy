@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Age
+    </th>
+    <th>
+      Email
+    </th>
+    <th>
+      Address
+    </th>
+    <th>
+      Phone
+    </th>
+  </tr>
+  <tr th:each="person: ${persons}">
+    <td th:text="${person.name}">
+    <td th:text="${person.age}">
+    <td th:text="${person.email}">
+    <td th:text="${person.address}">
+    <td th:text="${person.phone}">
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback}">
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<h1>Wybierz plik</h1>
+<form method="post" enctype="multipart/form-data" action="/upload">
+    <input type="file" name="file" />
+    <p>Wybierz typ sortowania</p>
+    <select name="sortBy" id="persons">
+        <option value="name">Name</option>
+        <option value="age">Age</option>
+        <option value="email">Email</option>
+        <option value="address">Address</option>
+        <option value="phone">Phone</option>
+    </select>
+    <select name="order">
+        <option value="decent">Decent</option>
+        <option value="ascent">Ascent</option>
+    </select>
+    <br />
+    <input type="submit" value="Upload" />
+</form>
+<table>
+
+</table>
+
+
+</body>
+</html>
